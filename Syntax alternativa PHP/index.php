@@ -1,4 +1,7 @@
 <?php
+	
+// Documentação: https://www.php.net/manual/pt_BR/control-structures.alternative-syntax.php
+
 	$nome = 'Renato';
 
 	if($nome == 'Renato'):
