@@ -1,4 +1,6 @@
 <?php
+	//Documentação: https://www.php.net/manual/pt_BR/language.oop5.php
+
 	include('exemplo.class.php');
 	// Instancia de objeto
 	
