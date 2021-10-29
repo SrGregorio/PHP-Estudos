@@ -21,6 +21,5 @@
 	//Instanciar
 		$pessoa = new Pessoa;
 		$pessoa->master();	
-		
 
 ?>
