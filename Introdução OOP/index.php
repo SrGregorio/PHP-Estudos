@@ -5,22 +5,22 @@
 		private $idade = '27';
 		private $peso = '120KG';
 
-		public function comer(){
-			echo 'Estou me alimentando!';
+		private function jogar(){
+			echo 'Estou jogando WYD!';
 		}
-		public function assistir(){
-			echo 'Eu estou assisistindo!';
-			
+		private function estudar(){
+			echo 'Estou estudando para aprimorar meus conhecimentos!';
 		}
+		
+		function master(){
+        $this->jogar();
+        $this->estudar();
+    	}
 	}
 
-//Instanciar
+	//Instanciar
 		$pessoa = new Pessoa;
-		$pessoa->comer();
-		$pessoa->assistir();
-
-	
-
-
+		$pessoa->master();	
+		
 
 ?>
