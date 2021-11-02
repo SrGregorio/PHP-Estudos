@@ -2,13 +2,13 @@
 	
 	$pdo = new PDO('mysql:host=localhost;dbname=estudo','root','');
 
-	$id = 8;
+	$id = 1;
+	$nome = 'Heitor';
+	$sobrenome = 'Gregório';
 
-	$sql = $pdo->prepare("UPDATE `clientes` SET nome='Heitor', sobrenome='Gregório' WHERE id=$id");
+	$sql = $pdo->prepare("UPDATE `clientes` SET nome=?, sobrenome=? WHERE id=$id");
 
-	if($sql->execute()){
+	if($sql->execute(array($nome, $sobrenome))){
 		echo 'Meu cliente foi atualizado com exito!';
 	}
-
-
 ?>
